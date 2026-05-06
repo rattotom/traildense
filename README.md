@@ -57,10 +57,3 @@
 | 4 | HUD & post-ride flow | Minimal metrics overlay, upload toggle, and storage dashboard |
 | 5 | Creator build & telemetry | Testable APK with logging, crash reporting, and feedback tools |
 | 6 | Polish & regional beta | Creator testing in launch region, bug resolution, release prep |
-
-## Immediate Next Steps
-- Generate initial topographic MBTiles for the target launch region
-- Implement Android foreground location service with battery optimization handling
-- Define road filtering thresholds for elevation variance, buffer radius, and accuracy cutoffs
-- Prepare creator APK build configuration with debug flags, versioning, and feedback endpoints
-- Draft tester onboarding documentation and seed region assignments
