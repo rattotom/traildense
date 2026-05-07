@@ -25,6 +25,7 @@
 ## Minimal Fitness UI/UX
 - **Live HUD:** Persistent overlay showing distance, elapsed time, elevation gain, average speed, and maximum speed
 - **Controls:** Simple pause, stop, and upload buttons positioned for one-handed use
+- **Optional Recording Toggle:** Users can toggle off HUD elements or recording at the start of a ride for minimal distraction
 - **Post-Ride Screen:** Summary of ride metrics, toggle to upload data to the public map, and option to save route locally for future replay features
 - **Design Philosophy:** Glanceable, distraction-free interface focused on core metrics. Advanced fitness tracking, calories, and social features are deferred to later versions.
 
