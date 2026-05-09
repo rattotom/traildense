@@ -117,3 +117,6 @@ For accurate GPS on a physical device, go to **Settings → Battery → Trailden
 | 4 | HUD & post-ride flow | Minimal metrics overlay, upload toggle, and storage dashboard |
 | 5 | Creator build & telemetry | Testable APK with logging, crash reporting, and feedback tools |
 | 6 | Polish & regional beta | Creator testing in launch region, bug resolution, release prep |
+
+## Future Tasks / Backlog
+- **Automate creator-application email delivery** — the `3d-website/` creator form currently dispatches submissions via a `mailto:` handoff that opens the visitor's mail client. Replace this with a real automated pipeline (Formspree / Web3Forms / EmailJS / a small serverless function) so applications land in `rattotom51@gmail.com` without requiring the visitor to hit send in their own mail app. Should preserve the existing structured payload (name, email, instagram, strava, region, device, riding cadence, reason, consent flags, build number, timestamp).
