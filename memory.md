@@ -56,6 +56,29 @@
 - **Success state:** echoes the submitter's email back, shows the build number, includes two fallback buttons — "re-open in mail client" (re-fires the same `mailto:`) and "copy details" (writes `To/Subject/Body` to clipboard via `navigator.clipboard`, with a 2.4s "copied" feedback state).
 - Added an entry to **Future Tasks / Backlog** in the root `README.md` to swap `mailto:` for an automated pipeline (Formspree / Web3Forms / EmailJS / serverless function), preserving the existing payload contract.
 
+## Session 3
+
+### Done
+- Full Week 1 prototype recode in `prototype/` — user had deleted the old one
+- Branch: `claude/week1-prototype-recode`
+- All 34 files written fresh with corrected brand theme + MapLibre 11 imports
+
+### Key changes vs old prototype
+- MapLibre 11: `org.maplibre.gl` package (not `com.mapbox.mapboxsdk`)
+- MapLibre.getInstance() called in Application.onCreate()
+- Fonts: Google Fonts runtime provider (no font files needed) — Big Shoulders Display + JetBrains Mono
+- Navigation: state-based in MainActivity (Screen.Map / Screen.PostRide), no nav-compose graph
+- Metrics passed through onRideComplete lambda (rideId, distM, elapsedSec, elevM, maxKph, avgKph)
+- font_certs.xml: GMS provider certificates for downloadable fonts
+- Gradle: AGP 8.3.2, Kotlin 1.9.23, KSP 1.9.23-1.0.20, Compose BOM 2024.05.00, Gradle 8.7
+
+### Pending
+- User must run `gradle wrapper` once in `prototype/` before first build (or open in Android Studio)
+- Week 2: Retrofit upload client, UploadWorker, server endpoint
+- PostRideScreen upload button is a no-op stub
+
+---
+
 ### In flight — full Android + iOS port
 - User requested: full Android app covering all 6 weeks of the MVP build sequence, then port to iOS. Both apps in separate top-level folders (`android/` and `ios/`). Should reuse the website's topographic theme.
 - Android Week 1 already exists at `prototype/` — Kotlin · Compose · Room · Hilt · MapLibre · foreground TrackingService. Plan is to rename `prototype/` → `android/` then layer on Weeks 2–6.
