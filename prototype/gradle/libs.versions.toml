@@ -1,0 +1,51 @@
+[versions]
+agp                 = "8.3.2"
+kotlin              = "1.9.23"
+ksp                 = "1.9.23-1.0.20"
+hilt                = "2.51"
+composeBom          = "2024.05.00"
+composeNav          = "2.7.7"
+room                = "2.6.1"
+maplibre            = "11.0.0"
+playServicesLocation= "21.3.0"
+workManager         = "2.9.0"
+googleFonts         = "1.6.7"
+coreKtx             = "1.13.1"
+activityCompose     = "1.9.0"
+lifecycleRuntimeKtx = "2.7.0"
+
+[libraries]
+androidx-core-ktx              = { module = "androidx.core:core-ktx",                   version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose      = { module = "androidx.activity:activity-compose",        version.ref = "activityCompose" }
+
+compose-bom          = { module = "androidx.compose:compose-bom",                         version.ref = "composeBom" }
+compose-ui           = { module = "androidx.compose.ui:ui" }
+compose-ui-graphics  = { module = "androidx.compose.ui:ui-graphics" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-ui-tooling   = { module = "androidx.compose.ui:ui-tooling" }
+compose-material3    = { module = "androidx.compose.material3:material3" }
+compose-icons        = { module = "androidx.compose.material:material-icons-extended" }
+
+hilt-android          = { module = "com.google.dagger:hilt-android",           version.ref = "hilt" }
+hilt-compiler         = { module = "com.google.dagger:hilt-android-compiler",  version.ref = "hilt" }
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose",  version = "1.2.0" }
+
+room-runtime  = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-ktx      = { module = "androidx.room:room-ktx",     version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+
+maplibre-android = { module = "org.maplibre.gl:android-sdk", version.ref = "maplibre" }
+
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+
+work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "workManager" }
+compose-google-fonts = { module = "androidx.compose.ui:ui-text-google-fonts", version.ref = "googleFonts" }
+
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "composeNav" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android      = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp                 = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+hilt                = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
